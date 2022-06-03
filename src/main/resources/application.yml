@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: clientes-market
+  data:
+    mongodb:
+      password:
+      username:
+      uri: mongodb://localhost:27017/clientes
+      database: clientes
+
+server:
+  port: 8091
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
